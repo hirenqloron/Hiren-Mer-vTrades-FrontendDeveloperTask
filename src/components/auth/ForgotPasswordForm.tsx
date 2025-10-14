@@ -63,7 +63,7 @@ export default function ForgotPasswordForm() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
-              className="w-full px-4 py-3 bg-[#1E1F26] border border-[#2C2D33] rounded-lg text-white font-semibold placeholder-gray-500 focus:outline-none focus:ring-1 focus:ring-purple-500 focus:border-purple-500 transition-all text-sm"
+              className="w-full px-4 py-3 bg-[#1E1F26] border border-[#2C2D33] rounded-lg text-white font-semibold placeholder-gray-500 focus:outline-none focus:ring-1 focus:ring-purple-primary focus:border-purple-primary transition-all text-sm"
               placeholder="navinash@workhive.com"
             />
           </div>
@@ -71,7 +71,7 @@ export default function ForgotPasswordForm() {
           <button
             type="submit"
             disabled={isLoading}
-            className="w-full py-3 bg-[#8B5CF6] hover:bg-[#7C3AED] text-white font-semibold rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-base"
+            className="w-full py-3 bg-purple-primary hover:bg-purple-hover text-white font-semibold rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-base"
           >
             {isLoading ? "Submitting..." : "Submit"}
           </button>
@@ -93,7 +93,7 @@ export default function ForgotPasswordForm() {
             </p>
             <button
               onClick={handleModalClose}
-              className="px-8 py-3 bg-[#8B5CF6] hover:bg-[#7C3AED] text-white font-semibold rounded-lg transition-colors"
+              className="px-8 py-3 bg-purple-primary hover:bg-purple-hover text-white font-semibold rounded-lg transition-colors"
             >
               Okay
             </button>

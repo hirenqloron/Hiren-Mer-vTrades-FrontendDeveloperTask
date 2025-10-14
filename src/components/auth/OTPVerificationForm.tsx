@@ -96,7 +96,7 @@ export default function OTPVerificationForm() {
         </p>
         <button
           onClick={() => router.push("/forgot-password")}
-          className="text-sm text-purple-400 hover:text-purple-300 font-normal"
+          className="text-sm text-purple-primary hover:text-purple-hover font-normal"
         >
           Change Email Address
         </button>
@@ -115,7 +115,7 @@ export default function OTPVerificationForm() {
               value={digit}
               onChange={(e) => handleChange(index, e.target.value)}
               onKeyDown={(e) => handleKeyDown(index, e)}
-              className="w-14 h-14 text-center text-2xl bg-[#1E1F26] border border-[#2C2D33] rounded-lg text-white font-semibold focus:outline-none focus:ring-1 focus:ring-purple-500 focus:border-purple-500 transition-all"
+              className="w-14 h-14 text-center text-2xl bg-[#1E1F26] border border-[#2C2D33] rounded-lg text-white font-semibold focus:outline-none focus:ring-1 focus:ring-purple-primary focus:border-purple-primary transition-all"
             />
           ))}
         </div>
@@ -129,7 +129,7 @@ export default function OTPVerificationForm() {
           <button
             type="button"
             onClick={handleResend}
-            className="text-sm text-purple-400 hover:text-purple-300 font-semibold"
+            className="text-sm text-purple-primary hover:text-purple-hover font-semibold"
           >
             Resend OTP
           </button>
@@ -138,7 +138,7 @@ export default function OTPVerificationForm() {
         <button
           type="submit"
           disabled={isLoading || otp.some((d) => !d)}
-          className="w-full py-3 bg-[#8B5CF6] hover:bg-[#7C3AED] text-white font-semibold rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-base"
+          className="w-full py-3 bg-purple-primary hover:bg-purple-hover text-white font-semibold rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-base"
         >
           {isLoading ? "Verifying..." : "Continue"}
         </button>

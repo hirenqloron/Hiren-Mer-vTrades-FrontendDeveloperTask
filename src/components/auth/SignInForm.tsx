@@ -58,7 +58,7 @@ export default function SignInForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="w-full px-4 py-3 bg-[#1E1F26] border border-[#2C2D33] rounded-lg text-white font-semibold placeholder-gray-500 focus:outline-none focus:ring-1 focus:ring-purple-500 focus:border-purple-500 transition-all text-sm"
+          className="w-full px-4 py-3 bg-[#1E1F26] border border-[#2C2D33] rounded-lg text-white font-semibold placeholder-gray-500 focus:outline-none focus:ring-1 focus:ring-purple-primary focus:border-purple-primary transition-all text-sm"
           placeholder="navinash@workhive.com"
         />
       </div>
@@ -77,7 +77,7 @@ export default function SignInForm() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
-            className="w-full px-4 py-3 bg-[#1E1F26] border border-[#2C2D33] rounded-lg text-white font-semibold placeholder-gray-500 focus:outline-none focus:ring-1 focus:ring-purple-500 focus:border-purple-500 transition-all text-sm pr-12"
+            className="w-full px-4 py-3 bg-[#1E1F26] border border-[#2C2D33] rounded-lg text-white font-semibold placeholder-gray-500 focus:outline-none focus:ring-1 focus:ring-purple-primary focus:border-purple-primary transition-all text-sm pr-12"
             placeholder="••••••••••••••"
           />
           <button
@@ -96,7 +96,7 @@ export default function SignInForm() {
             type="checkbox"
             checked={rememberMe}
             onChange={(e) => setRememberMe(e.target.checked)}
-            className="w-4 h-4 rounded border-[#2C2D33] bg-[#1E1F26] text-purple-600 focus:ring-1 focus:ring-purple-500 focus:ring-offset-0 cursor-pointer"
+            className="w-4 h-4 rounded border-[#2C2D33] bg-[#1E1F26] text-purple-primary focus:ring-1 focus:ring-purple-primary focus:ring-offset-0 cursor-pointer"
           />
           <span className="text-sm font-normal text-gray-300 group-hover:text-white transition-colors">
             Remember me
@@ -104,7 +104,7 @@ export default function SignInForm() {
         </label>
         <a
           href="/forgot-password"
-          className="text-sm font-semibold text-[#8854C0] hover:text-[#9D6FD4] transition-colors"
+          className="text-sm font-semibold text-purple-primary hover:text-purple-hover transition-colors"
         >
           Forgot Password?
         </a>
@@ -119,7 +119,7 @@ export default function SignInForm() {
       <button
         type="submit"
         disabled={isLoading}
-        className="w-full py-3 bg-[#8B5CF6] hover:bg-[#7C3AED] text-white font-semibold rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-base"
+        className="w-full py-3 bg-purple-primary hover:bg-purple-hover text-white font-semibold rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-base"
       >
         {isLoading ? "Signing in..." : "Sign In"}
       </button>

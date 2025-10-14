@@ -66,7 +66,7 @@ export default function SignInPage() {
             Don't have an account?{" "}
             <Link
               href="/signup"
-              className="text-purple-400 hover:text-purple-300 font-semibold transition-colors"
+              className="text-purple-primary hover:text-purple-hover font-semibold transition-colors"
             >
               Sign Up
             </Link>
