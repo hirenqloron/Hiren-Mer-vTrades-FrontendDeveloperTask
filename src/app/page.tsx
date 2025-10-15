@@ -63,7 +63,7 @@ export default function SignInPage() {
           <SocialAuthButtons />
 
           <p className="text-center text-gray-400 text-sm font-normal pt-2">
-            Don't have an account?{" "}
+            Don&apos;t have an account?{" "}
             <Link
               href="/signup"
               className="text-purple-primary hover:text-purple-hover font-semibold transition-colors"

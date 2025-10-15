@@ -44,7 +44,7 @@ export default function ForgotPasswordForm() {
             Forgot Your Password?
           </h2>
           <p className="text-base font-normal text-gray-400">
-            Don't worry! Enter your email address, and we'll send you a link to
+            Don&apos;t worry! Enter your email address, and we&apos;ll send you a link to
             reset it.
           </p>
         </div>
@@ -88,7 +88,7 @@ export default function ForgotPasswordForm() {
               Link Sent Successfully!
             </h3>
             <p className="text-gray-400 mb-8">
-              Check your inbox! We've sent you an email with instructions to
+              Check your inbox! We&apos;ve sent you an email with instructions to
               reset your password.
             </p>
             <button
