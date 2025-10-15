@@ -85,7 +85,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       }
       return session;
     },
-    async signIn({ account, profile, user }) {
+    async signIn({ account, user }) {
       // Log sign-in attempts in development
       if (process.env.NODE_ENV === "development") {
         console.log("Sign in attempt:", {

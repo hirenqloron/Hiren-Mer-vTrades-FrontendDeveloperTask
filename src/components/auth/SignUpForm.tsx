@@ -37,7 +37,7 @@ export default function SignUpForm() {
       } else {
         setError("Email already exists");
       }
-    } catch (error) {
+    } catch (_error) {
       setError("An error occurred. Please try again.");
     } finally {
       setIsLoading(false);

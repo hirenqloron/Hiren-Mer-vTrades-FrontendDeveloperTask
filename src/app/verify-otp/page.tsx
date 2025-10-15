@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import OTPVerificationForm from "../../components/auth/OTPVerificationForm";
 import Image from "next/image";
 import SignUpBanner from "../../../public/images/banner.svg";
@@ -47,7 +48,9 @@ export default function VerifyOTPPage() {
       </div>
 
       <div className="flex-1 flex items-center justify-center p-8 bg-[#17181E]">
-        <OTPVerificationForm />
+        <Suspense fallback={<div className="text-white">Loading...</div>}>
+          <OTPVerificationForm />
+        </Suspense>
       </div>
     </div>
   );

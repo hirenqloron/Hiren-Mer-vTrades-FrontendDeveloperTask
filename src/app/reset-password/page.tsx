@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import ResetPasswordForm from "../../components/auth/ResetPasswordForm";
 import Image from "next/image";
 import SignUpBanner from "../../../public/images/banner.svg";
@@ -47,7 +48,9 @@ export default function ResetPasswordPage() {
       </div>
 
       <div className="flex-1 flex items-center justify-center p-8 bg-[#17181E]">
-        <ResetPasswordForm />
+        <Suspense fallback={<div className="text-white">Loading...</div>}>
+          <ResetPasswordForm />
+        </Suspense>
       </div>
     </div>
   );

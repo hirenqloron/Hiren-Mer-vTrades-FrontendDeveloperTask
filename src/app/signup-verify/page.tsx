@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import SignUpOTPForm from "../../components/auth/SignUpOTPForm";
 import Image from "next/image";
 import SignUpBanner from "../../../public/images/banner.svg";
@@ -47,7 +48,9 @@ export default function SignUpVerifyPage() {
       </div>
 
       <div className="flex-1 flex items-center justify-center p-8 bg-[#17181E]">
-        <SignUpOTPForm />
+        <Suspense fallback={<div className="text-white">Loading...</div>}>
+          <SignUpOTPForm />
+        </Suspense>
       </div>
     </div>
   );

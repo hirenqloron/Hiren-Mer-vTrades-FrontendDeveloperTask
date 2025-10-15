@@ -13,14 +13,19 @@ const eslintConfig = [
   ...compat.config({
     extends: ["next/core-web-vitals", "next/typescript"],
     rules: {
-      // Disable specific rules
       'react/no-unescaped-entities': 'off',
       '@next/next/no-page-custom-font': 'off',
       '@next/next/no-img-element': 'off',
-      
-      // Or change severity level
       'react-hooks/exhaustive-deps': 'warn',
-      '@typescript-eslint/no-unused-vars': 'warn',
+      // Updated rule to ignore unused parameters
+      '@typescript-eslint/no-unused-vars': [
+        'warn',
+        {
+          argsIgnorePattern: '^_',  // Ignore params starting with _
+          varsIgnorePattern: '^_',
+          args: 'after-used',        // Only warn about unused params if they come after used ones
+        }
+      ],
     },
   }),
   {
